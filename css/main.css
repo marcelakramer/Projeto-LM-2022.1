@@ -1,0 +1,234 @@
+body {
+    background-image: url(/img/mobile_background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+header > i {
+    text-align: left;
+    font-size: 20px;
+}
+
+h1 {
+    padding-top: 115px;
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 200px;
+    font-size: 15px;
+}
+
+h1, h2, #grid, #copyright {
+    text-align: center;
+}
+
+img {
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+p {
+    text-align: justify;
+    margin: auto;
+    padding: 30px;
+    font-size: 13px;
+}
+
+a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu {
+    display: none;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    margin-top: 50px;
+}
+
+#grid img:hover {
+    box-shadow: 1px 1px 30px 0px #fff;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 300px;
+    height: auto;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+#social i:hover{
+    text-shadow: 1px 1px 30px #fff;
+}
+
+#copyright {
+    margin: 100px 0px 15px 0px;
+    font-size: 10px;
+}
+
+#menu-dropdown {
+    position: fixed;
+    display: inline-block;
+    z-index: 10;
+}
+  
+#menu-dropdown-hover {
+  display: inline-block;
+  background-color: #044b2e;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#menu-dropdown-content {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  background: #044b2e;
+  min-width: 30px;
+  border-radius: 5px;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+}
+
+#menu-dropdown:hover #menu-dropdown-content {
+  display: block;
+}
+
+#menu-dropdown-content a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+}
+
+#menu-dropdown-content a:hover {
+  background: #f0f0f0;
+  color: #044b2e;
+  border-radius: 5px;
+}
+
+#menu-dropdown i {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 820px) {
+      
+    body {
+        background-image: url(/img/background.svg);
+        background-color: #044b2e;
+        margin: 85px 0% 0% 0%;
+    }
+
+    h1 { 
+        padding-top: 410px;
+        font-size: 80px;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    p {
+        padding: 50px 50px 0px 175px;
+        font-size: 22px;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        height: 30px;
+        padding: 20px 0px 10px 0px;
+        position: fixed;
+        top: 0;
+        text-shadow: 1px 1px 30px 0px #fff;
+        background-color: #044b2e;
+
+    }
+
+    #menu > a:hover {
+        text-shadow: 1px 1px 8px #fff;
+    }
+
+    #menu-dropdown {
+        display: none;
+    }
+
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 25px;
+        width: 50%;
+        margin: 105px auto;
+    }
+
+    #grid img {
+        border-radius: 23px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    #tournaments {
+        padding-top: 475px;
+    }
+
+    #about {
+        width: 50%;
+        margin-left: 45%;
+        padding-top: 5%;
+    }
+
+    #about-title {
+        max-width: 720px;
+        padding-left: 125px;
+    }
+
+
+    #contact {
+        margin-top: 400px;
+    }
+
+    #social {
+        width: 100%;
+        max-width: 700px;
+        margin: 100px auto;
+        font-size: 50px;
+    }
+
+    #copyright {
+        margin: 190px 0px 15px 0px;
+        font-size: 16px;
+        
+    }
+  }
+
+
+
+
+
+
+
+
+
+

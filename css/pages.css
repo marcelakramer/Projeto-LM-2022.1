@@ -1,0 +1,390 @@
+body {
+    text-align: center;
+    background-color: #044b2e;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+img {
+    text-shadow: none;
+}
+
+header > img {
+    display: block;
+    margin: 30px auto;
+}
+
+#img-cover {
+    width: auto;
+    height: 80px;
+}
+
+a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu {
+    display: none;
+}
+
+#menu-dropdown {
+    position: fixed;
+    display: block;
+    z-index: 10;
+}
+  
+#menu-dropdown-hover {
+  display: inline-block;
+  padding: 10px;
+  background-color: #044b2e;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+}
+
+#menu-dropdown-content {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  min-width: 30px;
+  background: #044b2e;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+#menu-dropdown:hover #menu-dropdown-content {
+  display: block;
+}
+
+#menu-dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+#menu-dropdown-content a:hover {
+  background: #f0f0f0;
+  color: #044b2e;
+  border-radius: 5px;
+}
+
+#menu-dropdown i {
+  font-size: 30px;
+}
+
+table {
+    margin: 50px auto 20px auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
+}
+
+th {
+    padding: 2.5px 5px;
+    border: 0.5px solid #fff;
+    border-top: none;
+}
+
+tr > td:first-child {
+    text-align: left;
+}
+
+td {
+    padding: 8px 1px;
+    border: 0.5px solid #fff;
+}
+
+th:first-child, td:first-child {
+    padding-right: 5px;
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+.title {
+    padding-top: 150px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.last-row {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+}
+
+.libertadores, .classified, .champions-league {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #2f64ba);
+}
+
+.champions-league-qualifiers {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #08c6c9);
+}
+
+.pre-libertadores, .europa-league {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #f09711);
+}
+
+.sul-americana, .conference-league {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #0ec214);
+}
+
+.conference-league-qualifiers {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #0af094);
+}
+
+.relegation {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #d44c4c);
+}
+
+.relegation-play-offs {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, transparent, #ebcc1c);
+
+}
+
+.blue {
+    color:#2f64ba;
+}
+
+.light-blue {
+    color: #08c6c9;
+}
+
+.orange {
+    color: #f09711;
+}
+
+.green {
+    color: #0ec214;
+}
+
+.light-green {
+    color: #0af094;
+}
+
+.yellow {
+    color: #ebcc1c;
+}
+
+.red {
+    color: #d44c4c;
+}
+
+#standings-subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    width: auto;
+    font-size: 10px;
+}
+
+#last-update {
+    margin: 25px auto;
+    font-size: 8px;
+}
+
+.group-title {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 12%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.group {
+    margin-top: 20px;
+}
+
+.round-title, .quarter-title, .semis-title, .final-title {
+    margin: 100px 0px 30px 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.match-title {
+    margin: 30px auto;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.match {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-content: center;
+}
+
+.team-one, .x, .team-two {
+    display: inline;
+    font-size: 10px;
+}
+
+#latest-title {
+    padding-top: 100px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#check {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+iframe {
+    display: block;
+    width: 250px;
+    height: 160px;
+    margin: 40px auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#copyright {
+    margin: 75px 0px 10px 0px;
+    font-size: 8px;
+}
+
+@media screen and (min-width: 821px) {
+    
+
+    body {
+        margin: 85px 0% 0% 0%;
+    }
+
+    h1 {
+        padding-top: 150px;
+        font-size: 50px;
+    }
+
+    header > img {
+        margin: 100px auto;
+    }
+
+    #img-cover {
+       height: 150px;
+    }   
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        background-color: #044b2e;
+        width: 100%;
+        height: 30px;
+        padding: 20px 0px 10px 0px;
+        top: 0;
+        font-weight: 600;
+    }
+
+    #menu > a:hover {
+        text-shadow: 1px 1px 8px #fff;
+    }
+
+    #menu-dropdown {
+        display: none;
+    }
+
+    table {
+        margin: 100px auto 40px auto;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    th {
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        border-top: none;
+    }
+
+    td {
+        padding: 10px 20px;
+        border: 1px solid #fff;
+    }
+
+    th:first-child, td:first-child {
+        width: 35%;
+    }
+
+    .title {
+        padding-top: 300px;
+        font-size: 40px;
+    }
+
+    #standings-subtitle {
+        width: 850px;
+        font-size: 15px;
+    }
+
+    #last-update {
+        margin: 50px 250px;
+        font-size: 12px;
+    }
+
+    .group-title {
+        margin-top: 100px;
+        margin-left: 25%;
+        font-size: 25px;
+    }
+
+    .round-title, .quarter-title, .semis-title, .final-title {
+        margin: 200px 0px 60px 0px;
+        font-size: 35px;
+    }
+
+    .match-title {
+        font-size: 25px;
+    }
+
+    .match {
+        width: 50%;
+        margin: auto;
+    }
+
+    .team-one, .x, .team-two {
+        font-size: 20px;
+    }
+
+    #latest-title {
+        padding-top: 400px;
+        font-size: 50px;
+    }
+
+    #check {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    #media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    iframe {
+        display: inline;
+        width: 450px;
+        height: 280px;
+        margin: 150px auto auto auto;
+        border-radius: 10px;
+    }
+
+    #copyright {
+        margin: 190px auto 10px auto;
+        font-size: 16px;
+    }
+}
