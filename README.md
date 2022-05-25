@@ -10,7 +10,7 @@
          main.css
          pages.css
  
-##### img --- Pasta que contém as imagens utilizadas na construção do site.
+##### img --- Pasta que contém as imagens utilizadas no desenvolvimento do site.
          background.svg	
          cover_brasileirao.png	
          cover_bundesliga.jpg	
