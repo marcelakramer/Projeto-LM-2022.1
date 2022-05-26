@@ -190,7 +190,8 @@ a:link, a:hover, a:visited {
     }
 
     #tournaments {
-        padding-top: 475px;
+        margin-top: 400px;
+        padding-top: 75px;
     }
 
     #about {
