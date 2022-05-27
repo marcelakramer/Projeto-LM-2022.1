@@ -148,10 +148,6 @@ a:link, a:hover, a:visited {
         font-size: 40px;
     }
     
-    img {
-        height: 75%;
-    }
-    
     p {
         padding: 50px 50px 0 175px;
         font-size: 22px;
@@ -224,7 +220,6 @@ a:link, a:hover, a:visited {
     #copyright {
         margin: 190px 0 15px 0;
         font-size: 16px;
-        
     }
   }
 
