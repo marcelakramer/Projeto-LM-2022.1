@@ -147,7 +147,11 @@ a:link, a:hover, a:visited {
         margin: 0;
         font-size: 40px;
     }
-
+    
+    img {
+        height: 75%;
+    }
+    
     p {
         padding: 50px 50px 0 175px;
         font-size: 22px;
