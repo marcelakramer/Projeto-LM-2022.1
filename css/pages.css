@@ -3,7 +3,7 @@ body {
     background-color: #044b2e;
     color: #fff;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 h1 {
@@ -47,7 +47,7 @@ a:link, a:hover, a:visited {
   color: #fff;
   cursor: pointer;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 5px;
 }
 
@@ -88,7 +88,7 @@ table {
     border-collapse: collapse;
     border-radius: 5px;
     font-size: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0 1.5px 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
 }
 
 th {
@@ -189,12 +189,12 @@ th:last-child, td:last-child {
     justify-content: space-around;
     margin: auto;
     width: auto;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 #last-update {
     margin: 25px auto;
-    font-size: 6px;
+    font-size: 8px;
 }
 
 .group-title {
@@ -210,7 +210,7 @@ th:last-child, td:last-child {
 }
 
 .round-title, .quarter-title, .semis-title, .final-title {
-    margin: 100px 0 30px 0;
+    margin: 100px 0px 30px 0px;
     font-size: 12px;
     font-weight: 600;
 }
@@ -249,19 +249,42 @@ iframe {
     height: 160px;
     margin: 40px auto;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 #copyright {
-    margin: 75px 0 10px 0;
+    margin: 75px 0px 10px 0px;
     font-size: 8px;
+}
+
+form {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+
+#join {
+    padding: 0 0 100px 0;
+    font-weight: 600;
+}
+#return {
+    background-color: #044b2e;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 85%;
+}
+
+#return:hover {
+    text-shadow: 1px 1px 30px #fff;
+    transition-duration: 0.5s;
 }
 
 @media screen and (min-width: 820px) {
     
 
     body {
-        margin-top: 85px;
+        margin: 85px 0 0 0;
     }
 
     h1 {
@@ -290,8 +313,25 @@ iframe {
         font-weight: 600;
     }
 
-    #menu > a:hover {
-        text-shadow: 1px 1px 8px #fff;
+    #menu a {
+        position: relative;
+    }
+
+    #menu a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    #menu a:hover::before {
+        transform: scaleX(1);
     }
 
     #menu-dropdown {
@@ -302,7 +342,7 @@ iframe {
         margin: 100px auto 40px auto;
         font-size: 20px;
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     th {
@@ -342,7 +382,7 @@ iframe {
     }
 
     .round-title, .quarter-title, .semis-title, .final-title {
-        margin: 200px 0 60px 0;
+        margin: 200px 0px 60px 0px;
         font-size: 35px;
     }
 
@@ -386,5 +426,10 @@ iframe {
     #copyright {
         margin: 190px auto 10px auto;
         font-size: 16px;
+    }
+
+    #return {
+        margin-top: 0;
+        font-size: 32px;
     }
 }
