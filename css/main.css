@@ -204,6 +204,7 @@ a:link, a:hover, a:visited {
         top: 0;
         text-shadow: 1px 1px 30px 0px #fff;
         background-color: #044b2e;
+        z-index: 1;
     }
 
     #menu a {
