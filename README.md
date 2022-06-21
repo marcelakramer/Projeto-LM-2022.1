@@ -11,7 +11,8 @@
          pages.css
  
 ##### img --- Pasta que contém as imagens utilizadas no desenvolvimento do site.
-         background.svg	
+         background.svg
+         ball.png
          cover_brasileirao.png	
          cover_bundesliga.jpg	
          cover_champions.jpg	
@@ -35,7 +36,8 @@
 ##### pages --- Pasta que contém os arquivos de código HTML5 das páginas redirecionadas do site principal.
          brasileirao.html	
          bundesliga.html	
-         champions_league.html	
+         champions_league.html
+         join.html
          la_liga.html	
          libertadores.html	
          ligue_1.html
