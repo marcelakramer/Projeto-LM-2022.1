@@ -1,11 +1,16 @@
 body {
     background-image: url(/img/mobile_background.png);
+    position: relative;
     background-position: top center;
     background-repeat: no-repeat;
     color: #fff;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+}
+
+#teste {
+    display: none;
 }
 
 header > i {
@@ -28,9 +33,9 @@ h1, h2, #grid, #copyright {
 }
 
 img {
-    height: 80%;
+    height: 120px;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 p {
@@ -49,6 +54,40 @@ a:link, a:hover, a:visited {
     display: none;
 }
 
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    margin-top: 50px;
+}
+
+#grid img:hover {
+    transition-duration: 1s;
+    transition-delay: 0.1ms;
+    box-shadow: 1px 1px 30px 0px #fff;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 300px;
+    height: auto;
+    margin: 50px auto;
+    font-size: 30px;
+}
+
+#social i:hover{
+    transition-duration: 0.5s;
+    text-shadow: 1px 1px 30px #fff;
+}
+
+#copyright {
+    margin: 100px 0px 15px 0px;
+    font-size: 10px;
+}
+
 #menu-dropdown {
     position: fixed;
     display: inline-block;
@@ -63,7 +102,8 @@ a:link, a:hover, a:visited {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
 }
 
 #menu-dropdown-content {
@@ -99,43 +139,41 @@ a:link, a:hover, a:visited {
   font-size: 30px;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 30px;
-    margin-top: 50px;
-}
-
-#grid img:hover {
-    box-shadow: 1px 1px 30px 0 #fff;
-}
-
-#social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    width: 300px;
-    height: auto;
-    margin: 50px auto;
-    font-size: 30px;
-}
-
-#social i:hover{
-    text-shadow: 1px 1px 30px #fff;
-}
-
-#copyright {
-    margin: 100px 0 15px 0;
-    font-size: 10px;
-}
-
 @media screen and (min-width: 820px) {
       
     body {
         background-image: url(/img/background.svg);
         background-color: #044b2e;
-        margin-top: 85px;
+        margin: 85px 0% 0% 0%;
+    }
+
+    #teste {
+        display: block;
+        position: absolute;
+    }
+    
+    #teste img {
+        margin-top: 350px;
+        border: rgba(4, 75, 46, 0.5) 0.5px solid;
+        border-radius: 50%;
+        box-shadow: none;
+        height: 46px;
+        width: auto;
+        animation: fly 3s forwards;
+    }
+    
+    @keyframes fly {
+        0% {
+            transform: translate(0, 0) rotate(0deg);
+        }
+    
+        95% {
+            transform: translate(calc(50vw - 33px),0) rotate(360deg);
+        }
+    
+        100% {
+            transform: translate(calc(50vw - 33px), 23.5px) rotate(360deg);
+        }
     }
 
     h1 { 
@@ -147,9 +185,9 @@ a:link, a:hover, a:visited {
         margin: 0;
         font-size: 40px;
     }
-    
+
     p {
-        padding: 50px 50px 0 175px;
+        padding: 50px 50px 0px 175px;
         font-size: 22px;
     }
 
@@ -161,15 +199,32 @@ a:link, a:hover, a:visited {
         font-weight: bold;
         width: 100%;
         height: 30px;
-        padding: 20px 0 10px 0;
+        padding: 20px 0px 10px 0px;
         position: fixed;
         top: 0;
-        text-shadow: 1px 1px 30px 0 #fff;
+        text-shadow: 1px 1px 30px 0px #fff;
         background-color: #044b2e;
     }
 
-    #menu > a:hover {
-        text-shadow: 1px 1px 8px #fff;
+    #menu a {
+        position: relative;
+    }
+
+    #menu a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    #menu a:hover::before {
+        transform: scaleX(1);
     }
 
     #menu-dropdown {
@@ -185,7 +240,7 @@ a:link, a:hover, a:visited {
 
     #grid img {
         border-radius: 23px;
-        box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     #tournaments {
@@ -217,8 +272,9 @@ a:link, a:hover, a:visited {
     }
 
     #copyright {
-        margin: 190px 0 15px 0;
+        margin: 190px 0px 15px 0px;
         font-size: 16px;
+        
     }
   }
 
