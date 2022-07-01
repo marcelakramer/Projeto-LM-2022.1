@@ -168,11 +168,11 @@ a:link, a:hover, a:visited {
         }
     
         95% {
-            transform: translate(calc(50vw - 33px),0) rotate(360deg);
+            transform: translate(calc(50vw - 34px),0) rotate(360deg);
         }
     
         100% {
-            transform: translate(calc(50vw - 33px), 23.5px) rotate(360deg);
+            transform: translate(calc(50vw - 34px), 23.5px) rotate(360deg);
         }
     }
 
