@@ -1,5 +1,5 @@
 body {
-    background-image: url(/img/mobile_background.png);
+    background-image: url(./img/mobile_background.png);
     position: relative;
     background-position: top center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body {
 
 }
 
-#teste {
+#animacao {
     display: none;
 }
 
@@ -142,17 +142,17 @@ a:link, a:hover, a:visited {
 @media screen and (min-width: 820px) {
       
     body {
-        background-image: url(/img/background.svg);
+        background-image: url(./img/background.svg);
         background-color: #044b2e;
         margin: 85px 0 0 0;
     }
 
-    #teste {
+    #animacao {
         display: block;
         position: absolute;
     }
     
-    #teste img {
+    #animacao img {
         margin-top: 350px;
         border: rgba(4, 75, 46, 0.5) 0.5px solid;
         border-radius: 50%;
