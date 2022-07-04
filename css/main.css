@@ -1,5 +1,5 @@
 body {
-    background-image: url(./img/mobile_background.png);
+    background-image: url(../img/mobile_background.png);
     position: relative;
     background-position: top center;
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ a:link, a:hover, a:visited {
 @media screen and (min-width: 820px) {
       
     body {
-        background-image: url(./img/background.svg);
+        background-image: url(../img/background.svg);
         background-color: #044b2e;
         margin: 85px 0 0 0;
     }
