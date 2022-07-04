@@ -1,6 +1,6 @@
 # Projeto-LM-2022.1 - SOCCERGUIDE
 
-### Esse repositório abriga os arquivos que compõem o site da primeira etapa do projeto da disciplina 'Linguagem de Marcação'.
+### Esse repositório abriga os arquivos que compõem o site do projeto da disciplina 'Linguagem de Marcação'.
 
 #### Os arquivos estão organizados em: 
 
