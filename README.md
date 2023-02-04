@@ -8,7 +8,7 @@
  
 ##### css --- Pasta que contém os arquivos CSS do site.
          main.css
-         pages.css
+         pages.csssss
  
 ##### img --- Pasta que contém as imagens utilizadas no desenvolvimento do site.
          background.svg
